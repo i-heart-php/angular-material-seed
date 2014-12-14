@@ -4,7 +4,19 @@
       <span class="md-flex">Charts</span>
     </div>
   </md-toolbar>
-
+<style type="text/css">
+        [ac-chart] {
+            float: none;
+            width: 98%;
+            height: 550px;
+            margin: 2px 3%;
+        }
+        #chart2 > div > div.ac-legend > table,
+        #chart1 > div > div.ac-legend > table {
+            width: 6%;
+            min-width: 150px;
+        }
+    </style>
 <select ng-model="chartType">
 		<option value="pie">pie</option>
 		<option value="bar">bar</option>
