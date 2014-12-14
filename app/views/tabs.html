@@ -1,0 +1,52 @@
+<style type=”text/css”>
+
+.tabsdemoDynamicTabs .remove-tab {
+  margin-bottom: 40px; }
+.tabsdemoDynamicTabs .md-button {
+  display: block; }
+.tabsdemoDynamicTabs .demo-tab {
+  height: 300px;
+  text-align: center; }
+.tabsdemoDynamicTabs .tab0 {
+  background-color: #E3F2FD; }
+.tabsdemoDynamicTabs .tab1 {
+  background-color: #E1F5FE; }
+.tabsdemoDynamicTabs .tab2 {
+  background-color: #E0F7FA; }
+.tabsdemoDynamicTabs .tab3 {
+  background-color: #E0F2F1; }
+.tabsdemoDynamicTabs .title {
+  padding-top: 8px;
+  padding-right: 8px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #888;
+  margin-top: 24px; }
+.tabsdemoDynamicTabs [layout-align] > * {
+  margin-left: 8px; }
+.tabsdemoDynamicTabs form > [layout] > * {
+  margin-left: 8px; }
+.tabsdemoDynamicTabs .long > input {
+  width: 264px; }
+.tabsdemoDynamicTabs .md-button {
+  max-height: 30px; }
+.tabsdemoDynamicTabs .md-button.add-tab {
+  margin-top: 20px;
+  max-height: 30px !important; }
+
+</style>
+ <md-card class="md-blue-theme" style="padding:0">
+
+
+ <md-tabs md-selected="selectedIndex">
+    <md-tab ng-repeat="tab in tabs" md-on-select="announceSelected(tab)" md-on-deselect="announceDeselected(tab)" ng-disabled="tab.disabled" label="{{tab.title}}">
+    <div class="demo-tab tab{{$index%4}}" layout="column" layout-fill layout-align="space-around center">
+        <div ng-bind="tab.content" layout="row" layout-align="center center" style="min-height:450px"></div>
+        <md-button class="md-warn" ng-click="removeTab( tab )">
+          Remove Tab
+        </md-button>
+      </div>
+    </md-tab>
+  </md-tabs>
+  
+  </md-card>

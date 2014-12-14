@@ -1,0 +1,24 @@
+ <md-card class="md-blue-theme" style="min-height:450px;">
+  <md-toolbar md-theme="indigo">
+    <div class="md-toolbar-tools">
+      <span class="md-flex">Alerts</span>
+    </div>
+  </md-toolbar>
+<p class="inset">
+    Open a dialog over the app's content. Press escape or click outside to close the dialog.
+  </p>
+  <div layout="column" layout-align="center" style="padding-top:100px;">
+    <md-button class="md-primary" ng-click="showAlert($event)">
+      Alert Dialog
+    </md-button>
+    <div class="gap"></div>
+    <md-button class="md-primary" ng-click="showConfirm($event)">
+      Confirm Dialog
+    </md-button>
+    <div class="gap"></div>
+  </div>
+  <br/>
+  <b layout="row" layout-align="center center" layout-margin>
+    {{alert}}
+  </b>
+  </md-card>

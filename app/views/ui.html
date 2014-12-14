@@ -1,0 +1,88 @@
+<md-card class="md-blue-theme">
+    <md-content class="buttondemoBasicUsage">
+        <md-toolbar class="md-light-blue-dark-theme">
+            <h2 class="md-toolbar-tools">
+            <span>User Interface</span>
+          </h2>
+        </md-toolbar>
+
+
+
+        <section layout="row" layout-sm="column" layout-align="center center">
+            <md-button class="md-raised">Button</md-button>
+            <md-button class="md-raised md-primary">Primary</md-button>
+            <md-button ng-disabled="true" class="md-raised md-primary">Disabled</md-button>
+            <md-button class="md-raised md-warn">Warn</md-button>
+            <div class="label">raised</div>
+        </section>
+        <section layout="row" layout-sm="column" layout-align="center center">
+            <md-button class="md-fab md-primary" md-theme="green" ng-click="copyType = !copyType">
+                <i class="fa" ng-class="copyType ? 'fa-copy' : 'fa-paste'"></i>
+            </md-button>
+            <md-button class="md-fab md-warn" aria-label="New document" ng-click="chartType = !chartType">
+                <i class="fa" ng-class="chartType ? 'fa-bar-chart' : 'fa-line-chart'"></i>
+            </md-button>
+            <md-button class="md-fab" ng-disabled="true">
+                <i class="fa fa-trash"></i>
+            </md-button>
+            <md-button class="md-fab md-primary" ng-click="cartType = !cartType">
+                <i class="fa" ng-class="cartType ? 'fa-cc-visa' : 'fa-shopping-cart'"></i>
+            </md-button>
+            <div class="label">FAB</div>
+        </section>
+        <section layout="row" layout-sm="column" layout-align="center center">
+            <md-button ng-href="{{googleUrl}}" target="_blank">Go to Google</md-button>
+            <md-button>RSVP</md-button>
+        </section>
+        <section layout="row" layout-sm="column" layout-align="center center">
+            <md-button class="md-primary" md-theme="green">Button</md-button>
+            <md-button class="md-primary md-raised" md-theme="{{ active ? 'indigo' : 'light-green' }}" ng-click="toggleColor()" md-theme-watch="true">Button</md-button>
+            <md-button class="md-primary md-raised" md-theme="{{ active ? 'orange' : 'purple' }}" ng-click="toggleColor()" md-theme-watch="true">Button 3</md-button>
+            <md-button class="md-primary" md-theme="cyan">Button</md-button>
+            <div class="label">Themed</div>
+        </section>
+        <section layout="row" style="padding:30px">
+            <form>
+                <div class="row" style="text-align:left; margin-left:15px">
+                    <md-text-float label="Username" ng-model="user.title" autocomplete="off"></md-text-float>
+                    <md-text-float label="Password" ng-model="user.email" type="password"></md-text-float>
+                </div>
+                <br>
+                <md-switch ng-model="data.cb1" aria-label="Switch 1">
+                    Switch 1: <code>{{ data.cb1 }}</code>
+                </md-switch>
+                <br>
+                <md-switch ng-model="data.cb2" aria-label="Switch 2" ng-true-value="'yup'" ng-false-value="'nope'">
+                    Switch 2: <code>{{ data.cb2 }}</code>
+                    <br>
+                </md-switch>
+                <br>
+                <md-switch ng-disabled="true" style="cursor: not-allowed;" aria-label="Disabled switch">
+                    Switch (Disabled)
+                </md-switch>
+                <br>
+                <md-switch md-no-ink aria-label="Switch No Ink">
+                    Switch (No Ink)
+                </md-switch>
+                <br>
+                <md-checkbox ng-model="data.cb1" aria-label="Checkbox 1">
+                    Checkbox 1: <code>{{ data.cb1 }}</code>
+                </md-checkbox>
+                <md-checkbox ng-model="data.cb2" aria-label="Checkbox 2" ng-true-value="'yup'" ng-false-value="'nope'">
+                    Checkbox 2: <code>{{ data.cb2 }}</code>
+                </md-checkbox>
+                <md-checkbox ng-disabled="true" aria-label="Disabled checkbox" ng-model="data.cb3">
+                    Checkbox (Disabled)
+                </md-checkbox>
+                <md-checkbox ng-disabled="true" aria-label="Disabled checked checkbox" ng-model="data.cb4" ng-init="data.cb4=true">
+                    Checkbox (Disabled, Checked)
+                </md-checkbox>
+                <md-checkbox md-no-ink aria-label="Checkbox No Ink" ng-model="data.cb5">
+                    Checkbox (No Ink)
+                </md-checkbox>
+                <div class="label">Inputs, Checkboxes and Switches</div>
+            </form>
+            </section>
+</md-card>
+
+
