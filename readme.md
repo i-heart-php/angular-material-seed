@@ -1,5 +1,5 @@
-# ngMaterial Seed Built Using
-Yeoman AngularJS Generator [![Build Status](https://travis-ci.org/i-heart-php/angular-material-seed.svg)](https://travis-ci.org/i-heart-php/angular-material-seed)
+# ngMaterial Seed
+Yeoman AngularJS App [![Build Status](https://travis-ci.org/i-heart-php/angular-material-seed.svg)](https://travis-ci.org/i-heart-php/angular-material-seed)
 
 ## Begin
 
