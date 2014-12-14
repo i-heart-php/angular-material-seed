@@ -4,9 +4,9 @@
 
 Install deps: `npm cache clean && npm install && bower install`
 
-Run `grunt` for building and deployment. Create `.ftppass` for ftp login info otherwise remove `ftp-deploy` from `gruntfile.js`.
+Run `grunt` for building and deployment. Create `.ftppass` for ftp login info otherwise remove `ftp-deploy` task from `gruntfile.js`.
 
-and `grunt serve` for preview and livereload.
+For Development Use `grunt serve`, task provies preview and livereload.
 
 ## Generators
 
