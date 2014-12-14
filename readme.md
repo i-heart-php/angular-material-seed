@@ -2,9 +2,11 @@
 
 ## Begin
 
-Install deps `npm cache clean && npm install && bower install`:
+Install deps: `npm cache clean && npm install && bower install`
 
-Run `grunt` for building and `grunt serve` for preview
+Run `grunt` for building and deployment. Created `.ftppass` for ftp login info.
+
+and `grunt serve` for preview and livereload.
 
 ## Generators
 
