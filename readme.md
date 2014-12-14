@@ -1,4 +1,4 @@
-# ngMaterial Seed built using AngularJS Generator [![Build Status](https://travis-ci.org/i-heart-php/angular-material-seed.svg)](https://travis-ci.org/i-heart-php/angular-material-seed)
+# ngMaterial Seed Built Using AngularJS Generator [![Build Status](https://travis-ci.org/i-heart-php/angular-material-seed.svg)](https://travis-ci.org/i-heart-php/angular-material-seed)
 
 ## Begin
 
