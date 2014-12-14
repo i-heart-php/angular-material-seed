@@ -19,7 +19,19 @@
     <link rel="stylesheet" href="styles/hover.css">
     <!-- endbuild -->
 </head>
-
+<style type="text/css">
+        [ac-chart] {
+            float: none;
+            width: 98%;
+            height: 550px;
+            margin: 2px 3%;
+        }
+        #chart2 > div > div.ac-legend > table,
+        #chart1 > div > div.ac-legend > table {
+            width: 6%;
+            min-width: 150px;
+        }
+    </style>
 <body ng-app="app">
 
 
@@ -40,25 +52,26 @@
                     <p hide show-gt-md>
                         This sidenav is locked open on your device. To go back to the default behavior, narrow your display.
                     </p>
-                    <div>
-                        <md-button ng-href="#/">
-                            Layouts
-                        </md-button>
-                    </div>
-
-                    <br/>
+                    
                      <div>
                         <md-button ng-href="#/alerts">
                             Alerts
                         </md-button>
                     </div>
                     <br/>
-                    <!-- TODO: -->
+
                      <div>
-                        <md-button ng-href="#/">
+                        <md-button ng-href="#/charts">
                            Charts
                         </md-button>
                     </div>
+                    <br/>
+                    <div>
+                        <md-button ng-href="#/">
+                            Layouts
+                        </md-button>
+                    </div>
+
                     <br/>
                      <div>
                         <md-button ng-href="#/tabs">
@@ -130,6 +143,8 @@
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/hammerjs/hammer.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/angular-charts/dist/angular-charts.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -139,6 +154,7 @@
     <script src="scripts/controllers/tabs.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/ui.js"></script>
+    <script src="scripts/controllers/charts.js"></script>
     <!-- endbuild -->
 </body>
 

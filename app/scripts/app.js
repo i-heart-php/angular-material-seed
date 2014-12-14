@@ -18,7 +18,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ngMaterial'
+    'ngMaterial',
+    'angularCharts'
   ])
   .controller('AppCtrl', function($scope, $timeout, $mdSidenav) {
     $scope.toggleLeft = function() {
@@ -52,6 +53,10 @@ angular
       .when('/ui', {
         templateUrl: 'views/ui.html',
         controller: 'UICtrl'
+      })
+      .when('/charts', {
+        templateUrl: 'views/charts.html',
+        controller: 'ChartsCtrl'
       })
       .otherwise({
         redirectTo: '/'
